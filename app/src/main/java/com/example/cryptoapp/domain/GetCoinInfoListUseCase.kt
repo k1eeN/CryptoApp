@@ -1,4 +1,4 @@
-package domain
+package com.example.cryptoapp.domain
 
 class GetCoinInfoListUseCase(
     private val repository: CoinRepository

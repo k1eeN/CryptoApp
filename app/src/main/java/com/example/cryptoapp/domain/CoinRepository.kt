@@ -1,4 +1,4 @@
-package domain
+package com.example.cryptoapp.domain
 
 import androidx.lifecycle.LiveData
 
