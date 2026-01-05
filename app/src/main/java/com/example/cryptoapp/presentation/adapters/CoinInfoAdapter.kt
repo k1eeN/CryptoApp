@@ -2,17 +2,14 @@ package com.example.cryptoapp.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoapp.R
 import com.example.cryptoapp.domain.CoinInfo
 import com.squareup.picasso.Picasso
 
 class CoinInfoAdapter(private val context: Context) :
-    RecyclerView.Adapter<CoinInfoAdapter.CoinInfoViewHolder>() {
+    RecyclerView.Adapter<CoinInfoViewHolder>() {
 
     var coinInfoList: List<CoinInfo> = listOf()
         set(value) {
@@ -49,13 +46,6 @@ class CoinInfoAdapter(private val context: Context) :
                 }
             }
         }
-    }
-
-    class CoinInfoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivLogoCoin = itemView.findViewById<ImageView>(R.id.ivLogoCoin)
-        val tvSymbols = itemView.findViewById<TextView>(R.id.tvSymbols)
-        val tvPrice = itemView.findViewById<TextView>(R.id.tvPrice)
-        val tvLastUpdate = itemView.findViewById<TextView>(R.id.tvLastUpdate)
     }
 
     interface OnCoinClickListener {
